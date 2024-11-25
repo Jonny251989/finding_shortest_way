@@ -10,11 +10,8 @@ Algorithm::Algorithm(QObject* parent):QObject(parent){
 }
 
 void Algorithm::set_start_points(Point*point){
-    if(!from_)
-        from_= point;
-    else
-        to_ = point;
-    
+    if(!from_) from_= point;
+    else to_ = point;
 }
 
  void Algorithm::running_algorithm(){
